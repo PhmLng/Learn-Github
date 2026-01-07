@@ -1,6 +1,7 @@
 public class Test {
     public static void main(String[] args) {
-        Student student = new Student("vgs1422", "Nguyen Van A", 3.6);
+        Student student = new Student("vgs1422", "Nguyen Van A", 3.7);
+        Student student1 = new Student("vgs1444", "Nguyen Van B", 3.3);
         System.out.println("Name: ");
         student.displayStudentInfor();
     }
