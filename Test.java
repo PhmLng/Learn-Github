@@ -15,6 +15,15 @@ public class Test {
     }
 }
 
+class Teacher {
+    private String id;
+    private String name;
+
+    public Teacher() {
+        super();
+    }
+}
+
 class Student {
     private String id;
     private String name;
