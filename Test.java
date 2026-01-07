@@ -1,9 +1,17 @@
+import java.util.ArrayList;
+
 public class Test {
     public static void main(String[] args) {
         Student student = new Student("vgs1422", "Nguyen Van A", 3.7);
         Student student1 = new Student("vgs1444", "Nguyen Van B", 3.3);
-        System.out.println("Name: ");
-        student.displayStudentInfor();
+        ArrayList<Student> students = new ArrayList<>();
+        students.add(student);
+        students.add(student1);
+        for (Student studentTmp : students) {
+            studentTmp.displayStudentInfor();
+            System.out.println("---------------");
+        }
+
     }
 }
 
