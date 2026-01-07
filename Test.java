@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Scanner;
 
 public class Test {
     public static void main(String[] args) {
@@ -11,7 +12,6 @@ public class Test {
             studentTmp.displayStudentInfor();
             System.out.println("---------------");
         }
-
     }
 }
 
@@ -34,5 +34,13 @@ class Student {
         System.out.println("Id : " + this.id);
         System.out.println("Name: " + this.name);
         System.out.println("Gpa: " + this.gpa);
+    }
+
+    public void input() {
+        Scanner sc = new Scanner(System.in);
+        this.id = sc.nextLine();
+        this.name = sc.nextLine();
+        this.gpa = sc.nextDouble();
+        sc.nextLine();
     }
 }
