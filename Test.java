@@ -23,9 +23,14 @@ class Teacher {
         super();
     }
 
+    public void updateGpa(Student s, double gpa) {
+        s.setGpa(gpa);
+    }
+
     public String getId() {
         return id;
     }
+
     public void setId(String id) {
         this.id = id;
     }
@@ -38,6 +43,10 @@ class Student {
 
     public Student() {
         super();
+    }
+
+    public void setGpa(double gpa) {
+        this.gpa = gpa;
     }
 
     public Student(String id, String name, double gpa) {
