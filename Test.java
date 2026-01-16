@@ -23,6 +23,11 @@ class Teacher {
         super();
     }
 
+    public Teacher(String id, String name) {
+        this.id = id;
+        this.name = name;
+    }
+
     public void updateGpa(Student s, double gpa) {
         s.setGpa(gpa);
     }
